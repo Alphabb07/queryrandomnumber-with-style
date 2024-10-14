@@ -1,0 +1,31 @@
+body{
+background-color: #ccffc5;
+}
+.titolo{
+font-size: 50px;
+text-align: center;
+font-family: inter, bold;
+}
+.paragrafo{
+font-size: 16px;
+font-family: inter;
+text-align: center;
+justify-content: center;
+display: flex;
+text-align: justify;
+width: 70%;
+}
+h2{
+    font-size: 16px;
+    font-family: inter;
+
+}
+.container{
+width: 70%;
+margin: 0, auto;
+
+
+}
+.content{
+    text-align: justify;
+}
