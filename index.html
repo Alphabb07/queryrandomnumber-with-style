@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="STATIC/style.css">
-    <script src="STATIC/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic Number</title>
 </head>
@@ -23,11 +22,10 @@
         <br>
         <form id="indovinello">
         <h2>Indovina il numero magico</h2>
-        <input type="number" id="userGuess" class="inputnumber">
+        <input type="number" style="border-radius: 5px;"id="userGuess" class="inputnumber">
         <br>
         <br>
-        <a href="#" class="button">INDOVINA</a>
-        <br>
+        <input type="button" style="width: 350px; height: 60px; font-size: 24px; font-family: 'Inter', Bold; background-color: #3AE3A8; border-color: #3AE3A8; border-radius: 5px;" value="INDOVINA" onclick="inpututente()">        <br>
         </form>
         <p class="highorlownumber"></p>
         <br>
@@ -37,6 +35,9 @@
     </div>
         
     </div>
+
+
+
 
 
 
