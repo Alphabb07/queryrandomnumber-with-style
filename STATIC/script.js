@@ -14,6 +14,7 @@ function inpututente(){
     num_utente = parseInt(num_utente);
     if (isNaN(num_utente)) {
         console.log("Errore inserire un numero valido!")
+        document.querySelector("#tentativi_rimanenti").textContent = "Inserire un numero!";
         return;
 
     }
@@ -23,6 +24,7 @@ if (num_utente === numero_generato){
     document.querySelector("#alpha").textContent = "";
     document.querySelector("#tentativi_rimanenti").textContent = "Hai vinto!";
     document.querySelector("#beta").textContent = "";
+    invia.disabled = true;
 } else if  (num_utente < numero_generato){
     tentativi = tentativi-1;
     console.log("Il numero è troppo basso");
