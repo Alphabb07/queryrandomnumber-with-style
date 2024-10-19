@@ -15,6 +15,8 @@ function inpututente(){
     if (isNaN(num_utente)) {
         console.log("Errore inserire un numero valido!")
         document.querySelector("#tentativi_rimanenti").textContent = "Inserire un numero!";
+        document.querySelector("#alpha").textContent = "";
+        document.querySelector("#beta").textContent = "";
         return;
 
     }
