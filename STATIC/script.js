@@ -20,13 +20,21 @@ function inpututente(){
     console.log("Input Utente:", num_utente);
 if (num_utente === numero_generato){
     console.log("Hai vinto")
+    document.querySelector("#alpha").textContent = "";
+    document.querySelector("#tentativi_rimanenti").textContent = "Hai vinto!";
+    document.querySelector("#beta").textContent = "";
 } else if  (num_utente < numero_generato){
     tentativi = tentativi-1;
     console.log("Il numero è troppo basso");
     console.log("Tentativi rimanenti:",tentativi);
+    document.querySelector("#alpha").textContent = "Numero troppo basso! Hai ancora:";
+    document.querySelector("#tentativi_rimanenti").textContent = tentativi;
     if(tentativi === 0){
         console.log("Hai perso");
         invia.disabled = true;
+        document.querySelector("#tentativi_rimanenti").textContent = "Hai perso!";
+        document.querySelector("#beta").textContent = "Riprova!";
+        document.querySelector("#alpha").textContent = "";
     }
     } else {
         console.log("Il numero è troppo alto");
