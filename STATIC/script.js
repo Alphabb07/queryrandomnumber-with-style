@@ -14,31 +14,32 @@ function inpututente(){
     num_utente = parseInt(num_utente);
     if (isNaN(num_utente)) {
         console.log("Errore inserire un numero valido!")
-        document.querySelector("#tentativi_rimanenti").textContent = "Inserire un numero!";
-        document.querySelector("#alpha").textContent = "";
-        document.querySelector("#beta").textContent = "";
+        document.querySelector("#tentativi_rimanenti").innerHTML = "Inserire un numero!";
+        document.querySelector("#alpha").innerHTML = "";
+        document.querySelector("#beta").innerHTML = "";
         return;
 
     }
     console.log("Input Utente:", num_utente);
 if (num_utente === numero_generato){
     console.log("Hai vinto")
-    document.querySelector("#alpha").textContent = "";
-    document.querySelector("#tentativi_rimanenti").textContent = "Hai vinto!";
-    document.querySelector("#beta").textContent = "";
+    document.querySelector("#alpha").innerHTML = "";
+    document.querySelector("#tentativi_rimanenti").innerHTML = "Hai vinto!";
+    document.querySelector("#beta").innerHTML = "";
     invia.disabled = true;
 } else if  (num_utente < numero_generato){
     tentativi = tentativi-1;
     console.log("Il numero è troppo basso");
     console.log("Tentativi rimanenti:",tentativi);
-    document.querySelector("#alpha").textContent = "Numero troppo basso! Hai ancora:";
-    document.querySelector("#tentativi_rimanenti").textContent = tentativi;
+    document.querySelector("#alpha").innerHTML = "Numero troppo basso! Hai ancora:";
+    document.querySelector("#tentativi_rimanenti").innerHTML = tentativi;
+    document.querySelector("#beta").innerHTML = "tentativi";
     if(tentativi === 0){
         console.log("Hai perso");
         invia.disabled = true;
-        document.querySelector("#tentativi_rimanenti").textContent = "Hai perso!";
-        document.querySelector("#beta").textContent = "Riprova!";
-        document.querySelector("#alpha").textContent = "";
+        document.querySelector("#tentativi_rimanenti").innerHTML = "Hai perso!";
+        document.querySelector("#beta").innerHTML = "Riprova!";
+        document.querySelector("#alpha").innerHTML = "";
     }
     } else {
         console.log("Il numero è troppo alto");
