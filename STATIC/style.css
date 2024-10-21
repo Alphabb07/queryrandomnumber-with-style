@@ -62,3 +62,14 @@ font-size: 16px;
 font-weight: bold;
 
 }
+
+.red{
+background-color: red;
+
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
