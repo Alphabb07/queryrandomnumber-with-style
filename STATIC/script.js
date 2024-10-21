@@ -22,6 +22,7 @@ function inpututente(){
     }
     console.log("Input Utente:", num_utente);
 if (num_utente === numero_generato){
+    document.body.classList.toggle('green');
     console.log("Hai vinto")
     document.querySelector("#alpha").innerHTML = "";
     document.querySelector("#tentativi_rimanenti").innerHTML = "Hai vinto!";
@@ -29,12 +30,25 @@ if (num_utente === numero_generato){
     invia.disabled = true;
 } else if  (num_utente < numero_generato){
     tentativi = tentativi-1;
-    
+
     console.log("Il numero è troppo basso");
     console.log("Tentativi rimanenti:",tentativi);
     document.querySelector("#alpha").innerHTML = "Numero troppo basso! Hai ancora:";
     document.querySelector("#tentativi_rimanenti").innerHTML = tentativi;
-    if(tentativi === 0){
+    if(tentativi===3){
+        console.log("Giallo")
+        document.body.classList.toggle('yellow');
+    }
+    
+    if(tentativi<2){
+        console.log("Rosso")
+        document.body.classList.toggle('red');
+
+    }
+
+
+
+     if(tentativi === 0){
         console.log("Hai perso");
         invia.disabled = true;
         document.querySelector("#tentativi_rimanenti").innerHTML = "Hai perso!";
