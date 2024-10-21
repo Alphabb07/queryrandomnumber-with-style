@@ -21,7 +21,7 @@ body{
     max-width: 850px auto;
     margin: 20px auto;
     text-align: center;
-<<<<<<< HEAD
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,8 +63,7 @@ body{
     font-weight: bold;
     
     }
-=======
-}
+
 
 .inputnumber{
     height: 60px;
@@ -97,4 +96,3 @@ background-color: red;
 .green{
     background-color: green;
 }
->>>>>>> 6539dbacbdb351e7954205d7454ac44944ae18bd

@@ -14,21 +14,15 @@ function inpututente(){
     num_utente = parseInt(num_utente);
     if (isNaN(num_utente)) {
         console.log("Errore inserire un numero valido!")
-<<<<<<< HEAD
         document.querySelector("#tentativi_rimanenti").innerHTML = "Inserire un numero!";
         document.querySelector("#alpha").innerHTML = "";
         document.querySelector("#beta").innerHTML = "";
-=======
-        document.querySelector("#alpha").innerHTML = "";
-        document.querySelector("#beta").innerHTML = "";
-        document.querySelector("#tentativi_rimanenti").innerHTML = "Inserire un numero!";
->>>>>>> 6539dbacbdb351e7954205d7454ac44944ae18bd
         return;
 
     }
     console.log("Input Utente:", num_utente);
 if (num_utente === numero_generato){
-    document.body.classList.toggle('green');
+    document.body.classList.add('green');
     console.log("Hai vinto")
     document.querySelector("#alpha").innerHTML = "";
     document.querySelector("#tentativi_rimanenti").innerHTML = "Hai vinto!";
@@ -36,30 +30,32 @@ if (num_utente === numero_generato){
     invia.disabled = true;
 } else if  (num_utente < numero_generato){
     tentativi = tentativi-1;
-
     console.log("Il numero è troppo basso");
     console.log("Tentativi rimanenti:",tentativi);
     document.querySelector("#alpha").innerHTML = "Numero troppo basso! Hai ancora:";
     document.querySelector("#tentativi_rimanenti").innerHTML = tentativi;
-<<<<<<< HEAD
     document.querySelector("#beta").innerHTML = "tentativi";
-    if(tentativi === 0){
-=======
-    if(tentativi===3){
-        console.log("Giallo")
+    if(tentativi === 3){
         document.body.classList.toggle('yellow');
+    }  else if (tentativi === 1){
+        document.body.classList.add('red');
+        document.body.classList.remove('yellow');
+
     }
+
     
-    if(tentativi<2){
-        console.log("Rosso")
-        document.body.classList.toggle('red');
-
-    }
-
-
-
-     if(tentativi === 0){
->>>>>>> 6539dbacbdb351e7954205d7454ac44944ae18bd
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    if(tentativi === 0){
         console.log("Hai perso");
         invia.disabled = true;
         document.querySelector("#tentativi_rimanenti").innerHTML = "Hai perso!";
