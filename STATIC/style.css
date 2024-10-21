@@ -21,6 +21,7 @@ body{
     max-width: 850px auto;
     margin: 20px auto;
     text-align: center;
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,3 +63,38 @@ body{
     font-weight: bold;
     
     }
+=======
+}
+
+.inputnumber{
+    height: 60px;
+    width: 350px;
+
+
+}
+.alpha{
+font-family: inter;
+font-size: 16px;
+}
+.beta{
+font-family: inter;
+font-size: 16px;
+}
+.gamma{
+font-family: inter;
+font-size: 16px;
+font-weight: bold;
+
+}
+
+.red{
+background-color: red;
+
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+>>>>>>> 6539dbacbdb351e7954205d7454ac44944ae18bd
